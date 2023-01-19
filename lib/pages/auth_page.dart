@@ -29,7 +29,6 @@ class _AuthPageState extends State<AuthPage> {
         );
       }
     } catch (error) {
-      //TODO tratar erro
       print(error.toString());
     } finally {
       setState(() {

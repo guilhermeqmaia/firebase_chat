@@ -1,39 +1,39 @@
 {
-  "project_info": {
-    "project_number": "996121214877",
-    "project_id": "fir-chat-13cee",
-    "storage_bucket": "fir-chat-13cee.appspot.com"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:996121214877:android:6611fb57033980b87d3974",
-        "android_client_info": {
-          "package_name": "br.com.guilhermemaia.chat"
-        }
-      },
-      "oauth_client": [
+    "project_info": {
+        "project_number": "996121214877",
+        "project_id": "fir-chat-13cee",
+        "storage_bucket": "fir-chat-13cee.appspot.com"
+    },
+    "client": [
         {
-          "client_id": "996121214877-8qa3r77mumaj0qgs8l8aim6d5u51adip.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCP-a8TeERY2Rkf0adly7tYjwLICdSZ-wA"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "996121214877-8qa3r77mumaj0qgs8l8aim6d5u51adip.apps.googleusercontent.com",
-              "client_type": 3
+            "client_info": {
+                "mobilesdk_app_id": "1:996121214877:android:6611fb57033980b87d3974",
+                "android_client_info": {
+                    "package_name": "br.com.guilhermemaia.chat"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "996121214877-8qa3r77mumaj0qgs8l8aim6d5u51adip.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyCP-a8TeERY2Rkf0adly7tYjwLICdSZ-wA"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "996121214877-8qa3r77mumaj0qgs8l8aim6d5u51adip.apps.googleusercontent.com",
+                            "client_type": 3
+                        }
+                    ]
+                }
             }
-          ]
         }
-      }
-    }
-  ],
-  "configuration_version": "1"
+    ],
+    "configuration_version": "1"
 }

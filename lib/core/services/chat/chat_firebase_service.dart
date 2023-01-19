@@ -18,18 +18,24 @@ class ChatFirebaseService implements ChatService {
   }
 
   @override
-  Future<ChatMessage?> save(String text, ChatUser user) async {
-    final store = FirebaseFirestore.instance;
+  FutureOr<ChatMessage?> save(String text, ChatUser user) async {
+    try {
+      final store = FirebaseFirestore.instance;
 
-    final msg = ChatMessage.fromSave(text, user);
-    final docRef = await store
-        .collection('chat')
-        .withConverter(
-            fromFirestore: ChatExtensionMethods.fromFirestore,
-            toFirestore: ChatExtensionMethods.toFirestore)
-        .add(msg);
-    final snapshot = await docRef.get();
+      final msg = ChatMessage.fromSave(text, user);
+      final docRef = await store
+          .collection('chat')
+          .withConverter(
+              fromFirestore: ChatExtensionMethods.fromFirestore,
+              toFirestore: ChatExtensionMethods.toFirestore)
+          .add(msg);
+      final snapshot = await docRef.get();
 
-    return snapshot.data();
+      return snapshot.data();
+    } catch (e, s) {
+      print(e);
+      print(s);
+    }
+    return null;
   }
 }
